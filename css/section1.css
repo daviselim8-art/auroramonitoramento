@@ -1,0 +1,117 @@
+.section{
+    background-color: var(--cor-borda);
+    height: 100vh;
+    width: 100vw;
+}
+
+html, body {
+    overflow-x: hidden;
+}/*Tirar barra scroll*/
+
+.main-container{
+    display: flex;
+    flex-direction: row;
+    padding: 100px;
+    height: 340px;
+    
+} /*Container principal que centalizou os trem*/
+
+.container h1{
+    font-size: 3.5rem;
+    color: var(--cor-branca);
+    font-family: var(--inter);
+    font-weight: 700;
+     margin-left: 200px;
+
+    
+} /*Titulo da pagina*/
+
+
+.monitoramento{
+    font-family: monospace , var(--fm-alt);
+    border-right: 4px solid white;
+    white-space: nowrap;
+    width: 14ch;
+    display: inline-block;
+    overflow: hidden;
+    animation:  MarcadorAnimado 05s linear infinite;
+    animation:  animaTexto steps(14) 8s infinite;
+    color: var(--cor-aescuro);
+    
+} /* Animacao maquina de escrever*/
+
+@keyframes MarcadorAnimado{
+    50%{
+        border-right: transparent;
+    }
+}
+
+@keyframes animaTexto{
+    0%{
+        width: 0;
+    }
+}
+
+/* MINI TEXTOS */
+
+
+.main-content{
+    display: flex;
+    flex-direction: column;
+    padding-left: 300px;
+    color: white;
+    font-size: 1rem;
+    word-spacing: 0.9;
+    line-height: 1.6rem;
+    height: 100px;
+} /*Container que centralizou os textos*/
+.content{
+    padding-top: 1px;
+}
+p{
+    font-family: var(--fm);
+    text-align: justify;
+}/* NAO TAVA CONSEGUINDO POR NO MAIN CONTENT ENT BOTEI EM TUDO */
+
+
+/* BOTAO 1  */
+
+.container-btn {
+    display: flex;
+    justify-content: flex-start; /* centraliza horizontalmente */
+    margin-top: 0px;
+    padding-left: 300px; /* Adiciona espaço à esquerda */
+   
+}
+
+.btn {
+    background-color: var(--cor-aescuro);
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    font-family: var(--fm);
+    font-size: 1rem;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: var(--cor-branca);
+    color: var(--cor-aescuro);
+}
+
+.section1 svg {
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%;
+    height: auto; 
+    z-index: 1; 
+}
+
+
+
+
+
